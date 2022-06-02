@@ -10,10 +10,12 @@ const DeleteCtrl = require('../controllers/EntryCtrl/Delete')
 ////////////////////
 // Routes
 ///////////////////
-router.get("/", IndexCtrl)
+
+router.get("/", IndexCtrl.index)
 router.post("/", CreateCtrl.create)
 router.put("/:id", UpdateCtrl.update)
-router.delete('/:id', DeleteCtrl)
+router.delete('/:id', DeleteCtrl.delete)
+
 ///////////////////////
 // Exports
 ///////////////////////

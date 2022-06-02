@@ -7,6 +7,7 @@ const express = require('express')
 const app = express()
 const morgan = require('morgan')
 const cors = require('cors')
+const EntryRouter = require('./routes/entriesRouter')
 const PORT = process.env.PORT || 4200
 //////////////////////
 // Declare Middleware
@@ -17,11 +18,7 @@ app.use(express.json())
 ///////////////////////
 // Declare Routes and Routers 
 ///////////////////////
-// INDUCES - Index, New, Delete, Update, Create, Edit, Show
-app.get("/", (req, res) => {
-    res.send("Working")
-})
-
+app.use("/bookmarkd", EntryRouter)
 ///////////////////////////
 // Server Listener
 ///////////////////////////

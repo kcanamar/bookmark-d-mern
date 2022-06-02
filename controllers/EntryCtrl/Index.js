@@ -1,7 +1,7 @@
 ////////////////////////
 // Setup - Import deps
 ////////////////////////
-const Entry = require("../models/Entry");
+const Entry = require("../../models/Entry");
 ///////////////////////
 // Exports
 ///////////////////////

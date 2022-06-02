@@ -1,6 +1,8 @@
 ////////////////////////
 // Setup - Import deps and create app object
 ////////////////////////
+require('dotenv').config()
+require('./connection/db')
 const express = require('express')
 const app = express()
 //////////////////////

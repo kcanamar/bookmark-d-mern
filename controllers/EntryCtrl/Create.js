@@ -9,8 +9,8 @@ module.exports = {create}
 
 async function create(req, res) {
     try {
-        await Entry.create(req.body)
-    } catch (err) {
-        res.send(err)
+        res.json( await Entry.create(req.body))
+    } catch(error){
+        res.status(400).json(error)
     }
 }

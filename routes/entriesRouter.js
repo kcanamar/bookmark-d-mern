@@ -11,7 +11,7 @@ const DeleteCtrl = require('../controllers/EntryCtrl/Delete')
 // Routes
 ///////////////////
 router.get("/", IndexCtrl)
-router.post("/", CreateCtrl)
+router.post("/", CreateCtrl.create)
 router.put("/:id", UpdateCtrl)
 router.delete('/:id', DeleteCtrl)
 ///////////////////////

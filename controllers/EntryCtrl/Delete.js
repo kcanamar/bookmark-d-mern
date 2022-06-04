@@ -12,7 +12,6 @@ module.exports = {
 async function deleteEntry(req, res) {
   try {
     await Entry.findByIdAndDelete(req.params.id);
-    res.redirect("/bookmarkd");
   } catch (err) {
     res.status(404).json(err);
   }

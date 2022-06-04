@@ -10,7 +10,6 @@ module.exports = {update}
 async function update(req, res) {
     try {
         await Entry.findByIdAndUpdate(req.params.id, req.body);
-        res.redirect(`/bookmarkd`);
     } catch(err) {
         res.send(err);
     }

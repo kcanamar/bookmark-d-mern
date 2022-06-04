@@ -18,7 +18,7 @@ app.use(express.json())
 ///////////////////////
 // Declare Routes and Routers 
 ///////////////////////
-app.use("/bookmarkd", EntryRouter)
+app.use("/api", EntryRouter)
 ///////////////////////////
 // Server Listener
 ///////////////////////////
